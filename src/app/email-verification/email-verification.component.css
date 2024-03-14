@@ -1,0 +1,113 @@
+body {
+    margin: 0 auto;
+    background: #FEFEFE;
+    color: #585858;
+}
+
+.email-container {
+    font-size: 15px;
+    line-height: 23px;
+    max-width: 500px;
+    min-width: 460px;
+    text-align: center;
+}
+
+.horizontal-container {
+    font-size: 15px;
+    line-height: 23px;
+    max-width: 500px;
+    min-width: 460px;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    border-radius: 18px;
+}
+
+.carpool_logo {
+    display: block;
+    margin: 30px auto;
+}
+
+.horizontal-info-container {
+    width: 100%;
+    background: #fff;
+}
+
+.horizontal-form-box {
+    padding: 0 20px;
+    background-color: #fff;
+    /* border: 1px solid #5995fd; */
+    height: 466px;
+    padding: 30px;
+    box-shadow: 0 20px 40px 0 rgb(89, 149, 253,1.8);
+    border-radius: 18px;
+}
+
+
+
+.horizontal-form {
+    padding: 0 35px 40px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    background: #5995fd;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 0;
+    margin: 30px auto 0;
+    text-decoration: none;
+}
+
+.small {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    margin: 14px auto 0;
+    font-size: 14px;
+}
+
+.signature {
+    padding: 20px;
+}
+
+.footer {
+    padding: 0 20px 30px;
+    background: #5995fd;
+}
+
+.footer_content {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: initial;
+    color: #005750;
+}
+
+.footer_item {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.footer_item_image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.footer_item_caption {
+    margin: 0 auto;
+}
+
+.footer_legal {
+    padding: 20px 0 40px;
+    margin: 0;
+    font-size: 12px;
+    color: #A5A5A5;
+    line-height: 1.5;
+}
+

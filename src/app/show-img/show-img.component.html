@@ -1,0 +1,91 @@
+
+<div class="viewzone flex flex-wrap">
+   <img width="480px" class="border-2 border-gray-600 rounded-md" [src]="imageUrl">
+    <div class=" h-full px-5 flex flex-col">
+        <div class="w-full mx-10">
+            <h1 class=" py-1 text-2xl font-bold">Invoice Details :</h1>
+            <div class="w-full flex text-lg font-bold">
+                <div class="w-6/12 px-3 py-1 border border-gray-500 rounded-tl-lg">
+                    Invoice Number :
+                </div>
+                <div class="w-6/12 ps-5  py-1 border border-gray-500 rounded-tr-lg">
+                    {{ScannedData[0]["Invoice Number"]}}
+                </div>
+            </div>
+
+            <div class="w-full flex text-lg font-bold">
+                <div class="w-6/12 px-3  py-1 border border-gray-500 ">
+                    Date :
+                </div>
+                <div class="w-6/12 ps-5  py-1 border border-gray-500 ">
+                    {{ScannedData[0]["Date"]}}
+                </div>
+            </div>
+
+            <div class="w-full flex text-lg font-bold">
+                <div class="w-6/12 px-3  py-1 border border-gray-500 ">
+                    Total :
+                </div>
+                <div class="w-6/12 ps-5  py-1 border border-gray-500 ">
+                    {{ScannedData[0]["Total"]}}
+                </div>
+            </div>
+
+            <div class="w-full flex text-lg font-bold">
+                <div class="w-6/12 px-3  py-1 border border-gray-500 ">
+                    Tax :
+                </div>
+                <div class="w-6/12 ps-5  py-1 border border-gray-500 ">
+                    {{ScannedData[0]["Tax"]}}
+                </div>
+            </div>
+
+            <div class="w-full flex text-lg font-bold">
+                <div class="w-6/12 px-3  py-1 border border-gray-500 rounded-bl-lg">
+                    Subtotal :
+                </div>
+                <div class="w-6/12 ps-5  py-1 border border-gray-500 rounded-br-lg">
+                    {{ScannedData[0]["Subtotal"]}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-full mx-10">
+            <h1 class=" py-1 text-2xl font-bold">Billing Address :</h1>
+
+            <div class="w-full flex text-lg font-bold">
+                <div class="w-6/12 px-3  py-1 border border-gray-500 rounded-tl-lg">
+                    Name :
+                </div>
+                <div class="w-6/12 ps-5  py-1 border border-gray-500 rounded-tr-lg">
+                    {{ScannedAddress[0]["Name"]}}
+                </div>
+            </div>
+
+            <div class="w-full flex text-lg font-bold">
+                <div class="w-6/12 px-3  py-1 border border-gray-500 ">
+                    Phone :
+                </div>
+                <div class="w-6/12 ps-5  py-1 border border-gray-500 ">
+                    {{ScannedAddress[0]["Phone"]}}
+                </div>
+            </div>
+
+            <div class="w-full flex text-lg font-bold">
+                <div class="w-6/12 px-3  py-1 border border-gray-500 rounded-bl-lg">
+                    Address :
+                </div>
+                <div class="w-6/12 ps-5  py-1 border border-gray-500 rounded-br-lg">
+                    {{ScannedAddress[0]["Address"]}}
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="w-full mx-10 my-auto">
+            <button class="px-3 py-1 bg-green-400 rounded-md text-ld font-bold me-2" (click)="DownloadInvoice()">Downlaod</button>
+            <button class="px-3 py-1 bg-red-400 rounded-md text-ld font-bold ms-2" (click)="Close()">Close</button>
+        </div>
+    </div>
+</div>

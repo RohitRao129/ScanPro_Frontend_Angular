@@ -1,0 +1,8 @@
+button:hover,img:hover,a:hover{
+    cursor: pointer;
+}
+
+.viewzone{
+    height: calc(100vh - 110px);
+    width: 100vw;
+}

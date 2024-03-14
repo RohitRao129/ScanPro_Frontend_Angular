@@ -1,0 +1,37 @@
+<div class="horizontal-container" style="padding-top: 56px;">
+    <div *ngIf="showConfetti" class="confetti"></div> <!-- Show confetti -->
+    <table class="horizontal-form-box">
+      <tbody>
+        <tr>
+          <td class="section">
+            <table class="section_content">
+              <tbody>
+                <tr>
+                  <td class="section_content_padded">
+                    <ng-container *ngIf="userData">
+                      <h1>Hi {{ userData.fullname }},</h1>
+                      <p class="near_title last">
+                        Your email address is {{ userData.email }}.<br />You had entered it when signing up for Scanpro.
+                      </p>
+                      <p class="button">Your Email was Verified</p>
+                      <small>
+                        Scanpro - This platform will provide invoice processing functionality to extract and manage invoice data, but your email address stays private.
+                      </small>
+                    </ng-container>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="footer_legal">
+            © 2024 Google Inc. Hexaware technologies, Siruseri IT Park, Chennai, Tamil Nadu
+            <br /><br />
+            This is a mandatory service email from Scanpro Software.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
